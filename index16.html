@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" class="css">
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .container{
+            background:yellow;
+            height:100vh;
+        }
+        .aside {
+            
+        }
+        .navbar ul{
+            background: #fff;/* rgb(28, 27, 27);*/
+            width:17%;
+            margin-left:17px;
+            height:500px;
+            border-radius: 10px;
+            border-color:5px  red;
+            
+            
+            
+            
+        }
+        .navbar ul li{
+            display:block;
+            padding-top:30px;
+            
+        }
+        
+        .logo1 li a{
+            text-decoration: none;
+            margin-left:33px;
+            color:white;
+            background: blue;
+            padding-left:14px;
+            padding-top:11px;
+            padding-bottom:11px;
+            border-radius: 7px;
+            padding-right:77px;
+            box-shadow:1px 1px 1px 1px rgb(30, 29, 29);
+            flex-wrap:wrap;
+
+        }
+        .logo2 li a{
+            text-decoration: none;
+            border-radius: 7px;
+            box-shadow:1px 1px 1px 1px rgb(30, 29, 29);
+            margin-left:33px;
+            color:white;
+            background: blue;
+            padding-left:14px;
+            padding-top:11px;
+            padding-bottom:11px;
+            padding-right:77px;
+            flex-wrap:wrap;
+
+        }
+        .logo3 li a{
+            text-decoration: none;
+            margin-left:33px;
+            color:white;
+            background: blue;
+            padding-left:14px;
+            padding-top:11px;
+            border-radius: 7px;
+            padding-bottom:11px;
+            padding-right:51px;
+            flex-wrap:wrap;
+            box-shadow:1px 1px 1px 1px rgb(30, 29, 29);
+        }
+        .logo4 li a{
+            text-decoration: none;
+            margin-left:33px;
+            background: blue;
+            padding-left:14px;
+            box-shadow:1px 1px 1px 1px rgb(30, 29, 29);
+            padding-top:11px;
+            padding-bottom:11px;
+            color:white;
+            padding-right:79px;
+            border-radius: 7px;
+            flex-wrap:wrap;
+            transform: scale(1.03);
+ 
+        }
+        .logo5 li a{
+            text-decoration: none;
+            margin-left:33px;
+            background: blue;
+            padding-left:14px;
+            padding-top:11px;
+            padding-bottom:11px;
+            border-color:blue;
+            flex-wrap:wrap;
+            box-shadow:1px 1px 1px 1px rgb(30, 29, 29);
+            color:white;
+            padding-right:66px;
+            border-radius: 7px;
+
+        }
+        
+        .side-content {
+            background:blue;
+        }
+        .content{
+            height:96vh;
+        }
+        #about{
+            height:100vh;
+            background:yellow;
+        }
+         h1{
+            padding:10px;
+            text-align:center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: blue;
+            margin-left: 450px;
+            margin-right: 450px;
+            border-radius: 2px;
+            color:black;
+            
+         }
+         h2{
+            margin-top: 100px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:darkcyan
+         }
+         .box-content p{
+            margin-top:25px;
+            margin-left: 150px;
+            margin-right: 150px;
+            color:red;
+            font-style:bolder;
+         }
+         
+         .box-container .box p{
+            display: block;
+            text-align: center;
+            
+        
+            margin-left: 127px;
+            padding:10px;
+         }
+         .box-container .box{
+            text-align: center;
+            margin-left: 30px;
+            font-family: "Nunito";
+         }
+         
+         .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0rem;
+            font-family: "Nunito";
+            font-weight: 600;
+            text-align: center;
+            margin-left:150px;
+            border:2px solid black;
+            border-radius: 5px;;
+            margin-right: 147px;
+            
+         }
+
+
+          .box-container .box p span {
+            color: #011aff;
+         }
+         .logo{
+            background: #fff;
+            margin-left: 70px;
+            margin-right: 70px;
+            padding-bottom: 70px;
+            border-radius: 8px;
+         }
+         .logo:hover{
+            transform: scale(1.03);
+  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+         }
+         .education {
+            background:yellow;
+            height:100vh;
+         }
+         .education .qoute {
+            font-size: 1rem;
+            text-align: center;
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            color:red;
+         }
+         .education .box-data {
+            display: flex;
+            flex-wrap: wrap;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+         }
+         .education .box-data .bog {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
+  transition: 0.3s;
+  background: aqua;
+}
+.education .box-data .bog:hover {
+  transform: scale(1.03);
+  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+.education .box-data .bog .image {
+  flex: 1 1 20rem;
+  width: 80%;
+}
+.education .box-data .bog img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.education .box-data .bog .content-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem;
+  flex-wrap: wrap;
+  flex: 1 1 70rem;
+}
+.education .box-data .bog .content-box h4 {
+  font-size: 2rem;
+  color: #012970;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 0.7rem;
+}
+.education .box-data .bog .content-box p {
+  font-size: 1.1rem;
+  margin-left: 0.7rem;
+  text-align: left;
+}
+.education h5 {
+  font-size: 1rem;
+  color: rgb(34, 109, 0);
+  text-align: left;
+  margin: 0.1rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+.box-para{
+    background: #fff;
+    margin-left:90px ;
+    margin-right:90px ;
+    padding-bottom: 70px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .education .box-container .box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .education .box-data .bog .image {
+    width: 100%;
+    height: 20rem;
+  }
+  .education .box-data .bog img {
+    width: 100%;
+  }
+  .education .box-data .bog .content-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    flex: 0;
+  }
+  .education .btns {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-wrap: wrap;
+  }
+}
+#skills{
+    height:100vh;
+}
+#skills.info{
+    background:purple;
+}
+#skills img{
+    height:34px;
+    width:34px;
+}
+#contact{
+    background:yellow;
+    height:100vh;
+}
+.footer{
+    background:blue;
+    padding:20px;
+    
+}
+.heading1 h4{
+    text-align: center;
+    background:red;
+    padding:8px;
+    margin-left: 330px;
+    margin-right: 330px;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.linkedin{
+    
+    background: white;
+    margin-left: 10px;
+    border-radius: 18px;
+    padding-left:4px;
+    padding-right: 4px;
+}
+.auto{
+
+  max-width: 1050px;
+  width: 100%;
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  margin-top: 0rem;
+  margin-left:7rem ;
+  margin-right: 7rem;
+  margin-bottom: 2rem;
+  
+}
+.contact .auto .auto-graph {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 2rem;
+}
+.contact .auto-graph .image-box {
+  max-width: 40%;
+  margin-left: 4rem;
+}
+.contact .auto-graph .image-box img {
+  width:20%;
+  height: 17rem;
+  position: relative;
+}
+.contact .auto-graph form {
+  width: 45%;
+  margin-right: 1rem;
+}
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-group .field {
+  height: 50px;
+  display: flex;
+  position: relative;
+  margin: 2rem;
+  width: 100%;
+  padding:30px;
+  transform: scale(1.03);
+  
+  
+}
+form i {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color:black;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  
+}
+form .field input,
+form .message textarea {
+  width: 69%;
+  height: 100%;
+  outline: none;
+  padding: 9px 16px 9px 48px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  border: 1px solid rgb(51, 51, 51);
+  background: #e5ecfb;
+}
+.field input::placeholder,
+.message textarea::placeholder {
+  color: rgb(51, 51, 51);
+}
+.field input:focus,
+.message textarea:focus {
+  padding-left: 47px;
+  border: 2px solid rgb(115, 3, 167);
+}
+.field{
+    margin-bottom: 16px;
+}
+.field input:focus ~ i,
+.message textarea:focus ~ i {
+  color: red;
+}
+form .message {
+  position: relative;
+  margin: 0rem;
+  width: 68%;
+}
+form .message i {
+  top: 25px;
+  font-size: 19px;
+  left: 15px;
+}
+form .message textarea {
+  min-height: 80px;
+  max-height: 230px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 12px 20px 0 48px;
+}
+form .message textarea::-webkit-scrollbar {
+  width: 0px;
+}
+form .button-area {
+  display: flex;
+  float: left;
+  flex-direction: row-reverse;
+}
+   .button-area{
+
+  margin-left: 819px;
+  
+  
+}
+.button-area button {
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 9px 18px;
+  background: red;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  transition: 0.3s ease;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 45px;
+}
+.button-area button:hover {
+  background: #421cecf5;
+}
+.button-area span {
+  font-size: 17px;
+  padding: 1rem;
+  display: none;
+}
+.button-area button i {
+  position: relative;
+  top: 2px;
+  left: 2px;
+  font-size: 1rem;
+  transition: 0.3s;
+  color: #fff;
+}
+.button-area button:hover i {
+  left: 8px;
+}
+/* contact section media queries starts */
+@media (max-width: 900px) {
+  .contact {
+    min-height: 70vh;
+  }
+  .contact .auto {
+    margin: 3rem 0rem 42rem 0;
+  }
+  .contact .auto .auto-graph {
+    padding: 10px 12px;
+  }
+  .contact .auto-graph .image-box {
+    display: none;
+  }
+  .contact .auto-graph form {
+    width: 100%;
+    margin-right: 2rem;
+  }
+}
+/* contact section media queries ends */
+/* contact section ends */
+
+         
+
+            
+        
+        
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="content">
+    <aside class="sidebar" data-sidebar>
+            <div class="sidebar">
+                <div class="image">
+                    <img src="">
+                </div>
+                <div class="navbar">
+                    <nav>
+                        <ul>
+                         <div class="logo1">
+                               <li><a href="#">Home</a></li>
+                        </div>
+                        <div class="logo2">
+                            <li><a href="#">About</a></li>
+                        </div>
+                        <div class="logo3">
+                            <li><a href="#">Education</a></li>
+                        </div>
+                        <div class="logo4">
+                            <li><a href="#">Skills</a></li>
+                        </div>
+                        <div class="logo5">
+                            <li><a href="#">Contact</a></li>
+                        </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+
+    </div>
+    </aside>
+    </div>
+    <section class="about" id="about">
+        <h1 class="heading"><i class="fas fa-user-alt"></i> About Me</h1>
+        <div class="logo">
+        <div class="box-content">
+            <div class="image-box">
+                <img src="download.jfif" alt = "picture" width="30" height="30">
+            </div>
+            <h2>I'm a Web devloper</h2>
+            <p> <p>My name is Nikhil Chauhan. I'm a undergraduate  from Maharaja Agrasen Institute of Technology at Delhi with a degree in Information Technology. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. I am interested in exploring the fields of Software Engineering, Web development and Machine Learning.Working for myself to improve my skills. Love to build Web Pages.</p></p>
+        </div>
+        <div class="box-container">
+            
+            <div class="box">
+              <p><span> Age: </span> 18</p>
+              <p><span> Phone : </span> +91 991-096-0074</p>
+            </div>
+            <div class="box">
+              <p><span> Email : </span> nc429529@gmail.com</p>
+              <p><span> Place : </span> Delhi, India - 412206</p>
+            </div>
+            </div>
+            
+        </div>
+        
+    </section>
+    <section class="education" id="education">
+        
+    
+        <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+         <div class="box-para">
+          <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+      
+          <div class="box-data">
+      
+          <div class="bog">
+              <div class="image">
+              <img draggable="false" src="./assets/images/educat/college.jpg" alt="">
+              </div>
+              <div class="content-box">
+              <h4>Bachelor of Engineering in Information Technology</h3>
+              <p>Maharaja Agrasen Institute of Technology | GGSIPU</p>
+              <h5><pre> 2021-2025 | Pursuing</pre></h5>
+              </div>
+          </div>
+      
+          
+          <div class="bog">
+            <div class="image">
+            <img draggable="false" src="./assets/images/educat/school.jpg" alt="">
+            </div>
+            <div class="content-box">
+            <h4>Seconadary School | Science Stream</h3>
+            <p>M.R.L Senoir Secondary School | CBSE</p>
+            <h5><pre> 2017-2021 | Completed</pre></h5>
+            </div>
+          </div>
+          </div>
+        
+      
+      </div>
+      </section>
+      <!-- education section ends -->
+      <!--skills section starts here-->
+      <section class="skills" id="skills">
+        <h1 class="heading"><i class="fas fa-laptop-code"></i>Skills & Abilites</h1>
+        <div class="info">
+            
+            
+
+        </div>
+      </section>
+      <!--skills section edns here-->
+      <!--contact section starts here-->
+      <section class="contact" id="contact">
+        
+            <h1 class="heading"><i class="fas fa-headset"></i> Contact <span>Us</span></h1>
+         <div class="auto">
+            <div class="auto-graph">
+                <div class="image-box">
+                    <img draggable="false" src="./assets/images/contact1.png" alt="">
+                  </div>
+                  <form id="contact-form">
+                    <div class="field">
+                        <input type="text" placeholder="Name" name="name" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="email" placeholder="Email" required>
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                      <div class="field">
+                        <input type="text" name="phone" placeholder="Phone">
+                        <i class="fas fa-phone-alt"></i>
+                      </div>
+                      <div class="message">
+                      <textarea placeholder="Message" name="message" required></textarea>
+                      <i class="fas fa-comment-dots"></i>
+                      </div>
+                      </div>
+                    <div class="button-area">
+                      <button type="submit">
+                        Submit <i class="fa fa-paper-plane"></i></button>
+                    </div>
+                  </form>
+            </div>
+         </div>
+      </section>  
+      <section class="footer">
+        <div class="heading1">
+            <h4>Designed By  Nikhil Chauhan<a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/nikhil-b16773239"target="_blank"><i class="fab fa-linkedin"></i></a></h4>
+        </div>
+      </section>    
+      
+    
+    
+
+   </div>
+  
+  
+</body>
+</html>
